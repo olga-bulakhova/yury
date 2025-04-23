@@ -1,0 +1,33 @@
+.home-heading {
+	background-image: url('/img/home-heading.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 260px 0;
+
+	&.course-heading {
+		background-image: url('/img/course-heading.jpg');
+	}
+
+	.home-heading-content {
+		max-width: 560px;
+	}
+
+	h1 {
+		@include font-style(56px, 40px, 700);
+		line-height: 1.2;
+	}
+
+	@media (max-width: $md) {
+		background-image: url('/img/home-heading-mobile.jpg');
+		padding: 170px 0;
+
+		&.course-heading {
+			background-image: url('/img/course-heading-mobile.jpg');
+			padding: 100px 0;
+		}
+
+		.btn-white {
+			width: 100%;
+		}
+	}
+}

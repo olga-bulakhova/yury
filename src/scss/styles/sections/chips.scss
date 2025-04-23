@@ -1,0 +1,52 @@
+.chips {
+	.chips-container {
+		display: flex;
+	}
+
+	.chips-image {
+		//width: 38%;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.chips-text {
+		width: 62%;
+		padding-left: 80px;
+		padding-top: 10px;
+	}
+
+	.chips-list {
+		div {
+			padding-left: 40px;
+			font-size: 16px;
+			@include mark-arrow();
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: $md) {
+	.chips {
+		.chips-container {
+			display: block;
+		}
+
+		.chips-image {
+			display: none;
+		}
+
+		.chips-text {
+			width: 100%;
+			padding: 0;
+
+			h2 {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

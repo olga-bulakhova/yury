@@ -1,0 +1,56 @@
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.mb-80 {
+	margin-bottom: 80px;
+}
+
+.pt-70 {
+	padding-top: 70px;
+}
+
+.pt-112 {
+	padding-top: 112px;
+}
+
+.pb-112 {
+	padding-bottom: 112px;
+}
+
+.pt-60 {
+	padding-top: 60px;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
+}
+
+@media (max-width: $md) {
+	.mb-24-mobile {
+		margin-bottom: 24px;
+	}
+	.mb-20-mobile {
+		margin-bottom: 20px;
+	}
+
+	.mb-48-mobile {
+		margin-bottom: 48px;
+	}
+
+	.pt-50-mobile {
+		padding-top: 50px;
+	}
+
+	.pt-0-mobile {
+		padding-top: 0;
+	}
+}

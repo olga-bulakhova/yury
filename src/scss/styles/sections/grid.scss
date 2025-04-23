@@ -1,0 +1,39 @@
+.grid {
+	display: grid;
+	column-gap: 48px;
+	row-gap: 80px;
+}
+
+.grid-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-1-2 {
+	grid-template-columns: repeat(3, 1fr);
+
+	div:nth-child(2) {
+		grid-column: span 2;
+	}
+}
+
+.grid-item {
+	line-height: 1;
+	h4 {
+		line-height: 1.4;
+		@include font-style(24px, 24px, 700);
+		margin: 32px 0 16px;
+	}
+	div {
+		line-height: 1.5;
+	}
+}
+
+@media (max-width: $md) {
+	.grid {
+		row-gap: 48px;
+	}
+	.grid-3,
+	.grid-1-2 {
+		grid-template-columns: 1fr;
+	}
+}

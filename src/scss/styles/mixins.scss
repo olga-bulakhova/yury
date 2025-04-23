@@ -1,0 +1,25 @@
+@mixin font-style($size-l, $size-s, $weight) {
+	font-size: $size-l;
+	font-weight: $weight;
+
+	@media (max-width: $md) {
+		font-size: $size-s;
+	}
+}
+
+@mixin mark-arrow() {
+	position: relative;
+
+	&::before {
+		content: ' ';
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background-image: url('/img/icon-arr.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

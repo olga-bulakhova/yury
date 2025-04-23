@@ -1,0 +1,45 @@
+.banner {
+	.banner-content {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('/img/card.jpg');
+		padding: 48px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.banner-action {
+		padding-left: 20px;
+		display: flex;
+		justify-content: flex-end;
+		gap: 16px;
+	}
+
+	@media (max-width: $lg) {
+		.banner-action {
+			flex-direction: column;
+		}
+	}
+
+	@media (max-width: $md) {
+		.banner-content {
+			padding: 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+		}
+		.banner-action {
+			padding-left: 0;
+		}
+	}
+
+	@media (max-width: $sm) {
+		.banner-action {
+			width: 100%;
+			.btn {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.skills {
+	.skills-content {
+		display: flex;
+	}
+
+	.skills-text {
+		width: 52%;
+		padding-right: 80px;
+	}
+
+	.skills-image {
+		width: 48%;
+	}
+
+	.skills-title {
+		margin: 24px 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	@media (max-width: $md) {
+		//padding-top: 120px;
+		.skills-content {
+			flex-direction: column;
+		}
+
+		.skills-text {
+			order: 2;
+			width: 100%;
+			padding: 0;
+		}
+
+		.skills-image {
+			order: 1;
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+		.skills-title {
+			margin: 50px 0 24px;
+			font-family: 'Inter', sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+		}
+	}
+}
