@@ -8,6 +8,11 @@
 		background-image: url('/img/course-heading.jpg');
 	}
 
+	&.marketing-heading {
+		background-image: url('/img/m-h.jpg');
+		padding: 127px 0;
+	}
+
 	.home-heading-content {
 		max-width: 560px;
 	}
@@ -24,6 +29,10 @@
 		&.course-heading {
 			background-image: url('/img/course-heading-mobile.jpg');
 			padding: 100px 0;
+		}
+
+		&.marketing-heading {
+			background-image: url('/img/m-h-mobilw.jpg');
 		}
 
 		.btn-white {

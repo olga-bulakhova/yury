@@ -57,6 +57,16 @@ a {
 	line-height: 1.2;
 }
 
+.title-40-32 {
+	@include font-style(40px, 32px, 700);
+	line-height: 1.2;
+}
+
+.title-40-24 {
+	@include font-style(40px, 24px, 700);
+	line-height: 1.2;
+}
+
 .title-40 {
 	@include font-style(40px, 40px, 700);
 	line-height: 1.2;
@@ -146,6 +156,11 @@ main {
 
 .background-black {
 	background-color: var(--color-black);
+	color: var(--color-white-text);
+}
+
+.background-blue {
+	background-color: var(--color-blue);
 	color: var(--color-white-text);
 }
 
