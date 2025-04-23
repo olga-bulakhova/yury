@@ -7,6 +7,13 @@
 		overflow: hidden;
 	}
 
+	.heading-content-50 {
+		.heading-text,
+		.heading-image {
+			width: 50%;
+		}
+	}
+
 	.heading-text {
 		width: 64%;
 		padding: 48px;
@@ -29,27 +36,26 @@
 	.heading {
 		margin: 48px 0 0;
 
-		.heading-content {
+		.heading-content,
+		.heading-content-50 {
 			display: block;
-		}
 
-		.heading-text {
-			width: 100%;
-			padding: 32px;
-
-			.btn {
+			.heading-text {
 				width: 100%;
-				padding: 14px 24px;
+				padding: 32px;
+
+				.btn {
+					width: 100%;
+					padding: 14px 24px;
+				}
 			}
-		}
 
-		.heading-image {
-			width: 100%;
+			.heading-image {
+				width: 100%;
 
-			img {
-				// object-fit: cover;
-				// width: 100%;
-				height: auto;
+				img {
+					height: auto;
+				}
 			}
 		}
 	}

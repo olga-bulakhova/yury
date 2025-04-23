@@ -34,6 +34,10 @@
 	padding-bottom: 60px;
 }
 
+.pb-30 {
+	padding-bottom: 30px;
+}
+
 @media (max-width: $md) {
 	.mb-24-mobile {
 		margin-bottom: 24px;
@@ -52,5 +56,9 @@
 
 	.pt-0-mobile {
 		padding-top: 0;
+	}
+
+	.pb-0-mobile {
+		padding-bottom: 0;
 	}
 }
